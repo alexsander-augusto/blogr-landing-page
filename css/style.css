@@ -68,16 +68,128 @@ header .nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    border: 1px solid;
 }
 
 header .header-logo {
-    padding: 4rem 10rem;
+    padding: 4rem 5rem 4rem 10rem;
+    margin-right: 0;
 }
 
 header .nav ul {
     display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-grow: 2;
     list-style: none;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+header .nav #navDescription {
+    margin-right: .4rem;     
+    color: var(--white); 
+}
+
+header .nav #navArrow {
+    margin-right: 3rem;
+}
+
+header .nav ul li a {
+    text-decoration: none;
+}
+
+/* Buttons =============== */
+
+button {    
+    border: none;
+    color: var(--white);
+    padding: 0;
+    cursor: pointer;    
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+header .nav .acess {
+    margin-right: 11rem;
+}
+
+header .nav #login {
+    border: none;
+    background: transparent;
+    color: var(--white);
+    padding: 1rem 3rem;
+}
+
+header .nav #sign-up {
+    color: var(--light-red);
+    padding: 1rem 3rem 1rem 3rem;
+    background: white;
+    border-radius: 10rem;
+}
+
+header .nav #sign-up:hover {
+    color: white;
+    background: var(--light-red);
+    border: white 2px solid;
+}
+
+header .header-registration {
+    text-align: center;
+    padding: 4rem;    
+}
+
+header #start-for-free {
+    color: var(--light-red);
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background: white;
+    border-radius: 10rem; 
+    border: white 2px solid;  
+    margin-right: .5rem;
+}
+
+header #start-for-free:hover {
+    color: white;
+    background: var(--light-red);    
+    border: none;
+}
+
+header #learn-more {
+    color: white;
+    border: none;
+    background: transparent;
+    color: var(--white);
+    padding: 1rem 2rem;
+    border: white 2px solid;
+    border-radius: 10rem; 
+    margin-left: .5rem;  
+}
+
+header #learn-more:hover {
+    background: white;
+    color: var(--light-red);
+}
+
+/* Header Apresentation =============== */
+
+header .header-apresentation {
+    text-align: center;
+    padding-top: 4rem;
+}
+
+header .header-apresentation h1 {
+    font-size: 65px;
+    font-weight: 700;
+    color: white;
+}
+
+header .header-apresentation h2 {
+    color: white;
+    padding: 1.3rem;
+    font-size: 22px;
+    font-weight: 300;
 }
 
 /* Footer =============== */
