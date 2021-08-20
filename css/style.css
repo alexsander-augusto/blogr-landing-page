@@ -194,7 +194,7 @@ header .header-apresentation h2 {
     font-weight: 300;
 }
 
-/* Section Product =============== */
+/* Section =============== */
 
 #product h1 {
     text-align: center;
@@ -204,7 +204,8 @@ header .header-apresentation h2 {
     margin: 150px 40px 50px;
 }
 
-.product-main {
+.product-main,
+.company-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -217,16 +218,33 @@ header .header-apresentation h2 {
     padding: 3.3rem 7rem;
 }
 
+.company-details {
+    width: 50vw;
+    height: 500px;
+    padding: 3.3rem 4.5rem;
+}
+
 .product-details h2 {
     color: var(--very-dark-blue);
     font-size: 27px;
 }
 
-.product-details p {
+.company-details h1 {
+    color: var(--white);
+    font-size: 34px;
+    padding-top: 3rem;
+}
+
+.product-details p,
+.company-details p {
     font-size: 16px;
     color: var(--very-dark-grayish-blue);
     margin-top: 1.5rem;
     margin-bottom: 2.9rem;
+}
+
+.company-details p {
+    color: var(--grayish-blue);
 }
 
 .product-image {
@@ -240,6 +258,26 @@ header .header-apresentation h2 {
     position: relative;
     top: -32%;
     right: -24%;
+}
+
+#company {
+    background-color: var(--very-dark-black-blue);
+    background-image: url(../images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position-x: -65%;
+    background-position-y: 100%;
+    height: 68vh;
+    margin-top: 10rem;
+    border-radius: 0 6.5rem;
+}
+
+.company-image {    
+    padding-left: 100px;
+}
+
+#company-img {
+    width: 38rem;
+    margin-top: -4.5rem;
 }
 
 /* Footer =============== */
