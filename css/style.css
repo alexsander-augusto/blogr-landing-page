@@ -237,9 +237,9 @@ header .header-apresentation h2 {
 
 #product-img {
     width: 48rem;
-    position: absolute;
-    top: 106%;
-    right: -17%;
+    position: relative;
+    top: -32%;
+    right: -24%;
 }
 
 /* Footer =============== */
