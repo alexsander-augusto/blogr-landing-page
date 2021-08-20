@@ -205,13 +205,15 @@ header .header-apresentation h2 {
 }
 
 .product-main,
-.company-main {
+.company-main,
+.connect-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.product-details {
+.product-details,
+.connect-details {
     width: 50vw;
     height: 500px;
     display: inline-block;
@@ -224,7 +226,8 @@ header .header-apresentation h2 {
     padding: 3.3rem 4.5rem;
 }
 
-.product-details h2 {
+.product-details h2,
+.connect-details h2 {
     color: var(--very-dark-blue);
     font-size: 27px;
 }
@@ -236,7 +239,8 @@ header .header-apresentation h2 {
 }
 
 .product-details p,
-.company-details p {
+.company-details p,
+.connect-details p {
     font-size: 16px;
     color: var(--very-dark-grayish-blue);
     margin-top: 1.5rem;
@@ -278,6 +282,23 @@ header .header-apresentation h2 {
 #company-img {
     width: 38rem;
     margin-top: -4.5rem;
+}
+
+#connect {
+    margin-top: 10rem;
+}
+
+.connect-image {
+    width: 50vw;
+    height: 500px;
+    display: inline-block; 
+}
+
+#connect-img {
+    width: 48rem;
+    position: relative;
+    top: -18%;
+    right: 5%;
 }
 
 /* Footer =============== */
