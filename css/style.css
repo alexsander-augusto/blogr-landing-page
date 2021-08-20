@@ -100,7 +100,7 @@ header .nav ul li a {
     text-decoration: none;
 }
 
-/* Buttons =============== */
+/* Header Buttons =============== */
 
 button {    
     border: none;
@@ -138,7 +138,7 @@ header .nav #sign-up:hover {
 
 header .header-registration {
     text-align: center;
-    padding: 4rem;    
+    padding: 2rem;    
 }
 
 header #start-for-free {
@@ -190,6 +190,53 @@ header .header-apresentation h2 {
     padding: 1.3rem;
     font-size: 22px;
     font-weight: 300;
+}
+
+/* Section Product =============== */
+
+#product h1 {
+    text-align: center;
+    font-size: 40px;
+    color: var(--very-dark-blue);
+    font-weight: 600;
+    margin: 150px 40px 50px;
+}
+
+.product-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-details {
+    border: 5px solid;
+    width: 50vw;
+    height: 500px;
+    display: inline-block;
+    padding: 3.3rem 5rem;
+}
+
+.product-details h2 {
+    color: var(--very-dark-blue);
+    font-size: 30px;
+}
+
+.product-details p {
+    font-size: 16px;
+    color: var(--very-dark-grayish-blue);
+}
+
+.product-image {
+    width: 50vw;
+    height: 500px;
+    display: inline-block;    
+}
+
+#product-img {
+    width: 48rem;
+    position: absolute;
+    top: 110%;
+    right: -15%;
 }
 
 /* Footer =============== */
