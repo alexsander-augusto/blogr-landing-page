@@ -102,6 +102,13 @@ header .nav ul li a {
     text-decoration: none;
 }
 
+header .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Header Buttons =============== */
 
 button {    
@@ -134,8 +141,7 @@ header .nav #sign-up {
 
 header .nav #sign-up:hover {
     color: white;
-    background: var(--light-red);
-    border: white 2px solid;
+    background: var(--very-light-red);
 }
 
 header .header-registration {
