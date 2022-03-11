@@ -38,31 +38,39 @@ Header
 ====================
 */
 
-header {
-    padding: 3.375rem 1.5rem;
-    padding-bottom: unset;    
+header {  
     background: url(../images/bg-pattern-intro-desktop.svg) no-repeat -27.7vw/200%, linear-gradient(90deg, var(--background-very-light-red), var(--background-light-red));
     height: 600px;
-    border-radius: 0 0 0 6.25rem;
+    border-radius: 0 0 0 6.25rem;    
 }
 
 .header_menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding-top: 65px;    
 }
 
 .header_logo {
-    flex: 1;
+    padding-left: 170px;
 }
 
 .menuitems {
-    flex: 2;    
+    flex: 2;
+    padding-left: 65px;
 }
 
 nav ul,
-nav li {
-    list-style: none;
+nav li a {
+    list-style: none;    
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    padding-right: 2px;
+}
+
+nav li img {
+    padding-right: 30px;
 }
 
 nav ul {
@@ -75,8 +83,114 @@ nav ul {
 
 .acess {
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
 }
 
+.acess a:first-child {
+    padding-right: 30px;
+    color: #ffffff;
+}
+
+.acess a:nth-child(2) {
+    background-color: #ffffff;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 30px;
+    color: var(--light-red);
+}
+
+.acess a:nth-child(2):hover {
+    color: #ffffff;
+    background-color: var(--very-light-red);
+}
+
+.header_apresentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 60%;
+    color: #ffffff;
+    font-family: 'Overpass', sans-serif;
+}
+
+.header_title h1 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.header_title h2 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.header_registration {
+    display: flex;    
+}
+
+.header_registration a {
+    color: #ffffff;
+    padding: 15px;
+    display: block;
+    width: 140px;
+    height: 50px;
+}
+
+.header_registration a:first-child {
+    background-color: #ffffff;
+    color: var(--light-red);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    border-radius: 30px;
+    margin: 8px;
+}
+
+.header_registration a:first-child:hover {
+    background-color: var(--very-light-red);
+    color: #ffffff;
+}
+
+.header_registration a:nth-child(2) {
+    border: 1px solid #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    border-radius: 30px;
+    margin: 8px;
+}
+
+.header_registration a:nth-child(2):hover {
+    color: var(--light-red);
+    background-color: #ffffff;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+}
+
+.product h1 {
+    text-align: center;
+    color
+}
+
+.product_items {
+    display: flex;
+    align-items: center;
+}
+
+.product img {
+    width: 300px;
+}
 
 
 
