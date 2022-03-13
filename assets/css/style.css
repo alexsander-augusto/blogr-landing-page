@@ -41,7 +41,7 @@ Header
 header {  
     background: url(../images/bg-pattern-intro-desktop.svg) no-repeat -27.7vw/200%, linear-gradient(90deg, var(--background-very-light-red), var(--background-light-red));
     height: 600px;
-    border-radius: 0 0 0 6.25rem;    
+    border-radius: 0 0 0 6.25rem;
 }
 
 .header_menu {
@@ -173,27 +173,83 @@ nav ul {
     background-color: #ffffff;
 }
 
+/* 
+====================
+Section 1
+====================
+*/
+
+section {
+    font-family: 'Overpass', sans-serif;
+}
+
 .product {
     display: flex;
     flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    overflow: hidden;
+    padding-bottom: 280px;
 }
 
 .product h1 {
     text-align: center;
-    color
+    color: var(--very-dark-blue);
+    font-size: 36px;
+    margin-top: 160px;
+    font-weight: 600;   
 }
 
 .product_items {
+    width: 100%;
     display: flex;
     align-items: center;
+    color: var(--very-dark-blue);    
 }
 
-.product img {
-    width: 300px;
+.product_items h2 {
+    font-weight: 600;
+    font-size: 26px;
 }
 
+.product_items h2:nth-last-child(2) {
+    margin-top: 85px;
+}
 
+.product_items p {
+    margin-top: 35px;    
+}
 
+.product_description {
+    padding-left: 165px;
+    padding-top: 150px;
+    padding-right: 100px;
+    flex: 1;    
+}
+
+.product_image {
+    flex: 1;
+    position: relative;
+}
+
+.product_image img {
+    position: absolute;
+    top: -350px;
+}
+
+/* 
+====================
+Section 2
+====================
+*/
+
+.company {
+    height: 400px;
+    background-color: var(--very-dark-gray-blue);
+    margin-top: 60px;
+    border-radius: 0 6.25rem 0 6.25rem;
+}
 
 @media (max-width: 768px) {
     header {
