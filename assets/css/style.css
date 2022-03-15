@@ -424,14 +424,21 @@ Responsive
 */
 
 @media (max-width: 1240px) {
+
     .connect_image img {
         top: -300px;
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1140px) {
+
     .header_hamburguer {
         display: inline;
+    }
+
+    .menuitems,
+    .acess {
+        display: none;
     }
 }
 
