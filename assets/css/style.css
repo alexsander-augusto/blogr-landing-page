@@ -76,16 +76,17 @@ header {
     color: #fff;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
-    padding-right: 2px;
-}
-
-.menuitems nav li img {
-    padding-right: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .menuitems nav ul {
     display: flex;
 }
+
+/* .menuitems nav ul li:hover {
+    background-color: red;
+} */
 
 .menuitems .navsublinks {
     display: none;
