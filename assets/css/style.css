@@ -65,7 +65,9 @@ header {
     display: none;
 }
 
-.menuitems {
+.header-nav {
+    display: flex;
+    align-items: center;
     flex: 2;
     padding-left: 65px;
 }
@@ -89,6 +91,14 @@ header {
 } */
 
 .menuitems .navsublinks {
+    display: none;
+}
+
+.navlinks img:last-child {
+    display: none;
+}
+
+.hamburguer-trace {
     display: none;
 }
 
@@ -437,9 +447,68 @@ Responsive
         display: inline;
     }
 
-    .menuitems,
-    .acess {
+    .header-nav {
+        position: absolute;
+        flex-direction: column;
+        z-index: 99;
+        right: 56px;
+        top: 130px;
+        width: 300px;
+        height: auto;
+        background-color: #fff;
+        padding-left: 0;
+    }
+
+    .navlinks {
+        flex-direction: column;         
+        text-align: center;  
+        font-family: 'Overpass', sans-serif;    
+        margin-top: 20px;
+    }
+
+    .navlinks li {
+        margin-top: 20px;
+        font-size: 18px;  
+    }
+
+    .menuitems nav li a {
+        color: var(--very-dark-gray-blue);      
+        padding: 0;
+    }
+
+    .navlinks img:first-child {
         display: none;
+    }
+
+    .navlinks img:last-child {
+        display: inline-block;
+    }
+
+    .hamburguer-trace {
+        display: block;
+        width: 80%;
+        border-bottom: 1px solid var(--grayish-blue);
+        margin-top: 30px;
+    }
+
+    .acess {
+        flex-direction: column;        
+        text-align: center;
+        font-family: 'Overpass', sans-serif;
+        font-size: 18px;  
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .acess a:first-child {
+        color: var(--very-dark-gray-blue);      
+        padding-right: 0;  
+    }
+
+    .acess a:nth-child(2) {
+        background-image: linear-gradient(to right, var(--background-very-light-red), var(--background-light-red));
+        color: #fff;
+        margin-top: 15px;
     }
 }
 
@@ -452,11 +521,6 @@ Responsive
 
     .header_menu {
         width: 80%;
-    }
-
-    .menuitems,
-    .acess {
-        display: none;
     }
 
     .product_items,
