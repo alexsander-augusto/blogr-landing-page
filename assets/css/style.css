@@ -42,8 +42,8 @@ header {
     background: url(../images/bg-pattern-intro-desktop.svg) no-repeat 30%, linear-gradient(90deg, var(--background-very-light-red), var(--background-light-red));
     height: 600px;
     border-radius: 0 0 0 6.25rem;
-    padding-left: 170px;
-    padding-right: 170px;
+    padding-left: 100px;
+    padding-right: 100px;
     margin-left: auto;
     margin-right: auto;
     max-width: 1920px;
@@ -86,16 +86,71 @@ header {
     display: flex;
 }
 
-/* .menuitems nav ul li:hover {
-    background-color: red;
-} */
-
 .menuitems .navsublinks {
+    display: none;
+}
+
+.navlinks img:first-child {
+    display: inline-block;
+}
+
+.navlinks img:nth-child(2) {
+    display: none;
+    transform: rotate(180deg);
+}
+
+.navlinks img:nth-child(3) {
     display: none;
 }
 
 .navlinks img:last-child {
     display: none;
+}
+
+.menuitems .navsublinks {
+    background-color: #fff;
+    position: absolute;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 10%;
+    border-radius: 5px;
+    height: auto;
+    box-shadow: 0px 0px 1px #000;
+}
+
+.navlinks a:first-child:hover {
+    text-decoration: underline;
+}
+
+.menuitems .navsublinks a:hover {
+    text-decoration: none;
+}
+
+.menuitems .navsublinks li {
+    padding-top: 10px;
+}
+
+.menuitems .navsublinks li:first-child {
+    padding-top: 0;
+}
+
+.menuitems .navsublinks a {
+    padding-left: 0;
+    font-size: 14px;
+}
+
+.menuitems .navsublinks a {
+    color: #000;
+    font-weight: 300;
+}
+
+.menuitems .navsublinks ul {
+    
+}
+
+.menuitems .navsublinks a:hover {
+    font-weight: 600;
 }
 
 .hamburguer-trace {
@@ -137,7 +192,6 @@ header {
     align-items: center;
     text-align: center;
     justify-content: center;
-    height: 60%;
     color: #ffffff;
     font-family: 'Overpass', sans-serif;
 }
@@ -447,16 +501,27 @@ Responsive
         display: inline;
     }
 
+    #icon-hamburguer {
+        display: block;
+    }
+
+    #icon-close {
+        display: none;
+    }
+
     .header-nav {
         position: absolute;
         flex-direction: column;
         z-index: 99;
         right: 56px;
         top: 130px;
-        width: 300px;
+        width: 280px;
         height: auto;
         background-color: #fff;
         padding-left: 0;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #999; 
+        display: none;
     }
 
     .navlinks {
@@ -480,12 +545,59 @@ Responsive
         display: none;
     }
 
-    .navlinks img:last-child {
+    .navlinks img:nth-child(2) {
+        display: none;
+    }
+
+    .navlinks img:nth-child(3) {
         display: inline-block;
+    }
+    
+    .navlinks img:last-child {
+        display: none;
+        transform: rotate(180deg);
+    }
+
+    .menuitems .navsublinks {
+        display: block;
+        background-color: #efeff1;    
+        border-radius: 5px;   
+        position: static;    
+        padding-top: 0;        
+        padding-bottom: 0;  
+        width: 100%;
+    }
+
+    .menuitems .navsublinks.nav-product {
+        display: none;
+    }
+
+    .menuitems .navsublinks.nav-company {
+        display: none;
+    }
+
+    .menuitems .navsublinks.nav-connect {
+        display: none;
+    }
+
+    .menuitems .navsublinks li:first-child {
+        padding-top: 20px;
+    }
+
+    .menuitems .navsublinks li:last-child {
+        padding-bottom: 20px;
+    }
+
+    .menuitems .navsublinks li a{
+        font-size: 16px;
+        color: var(--very-dark-grayish-blue);
+        font-family: 'Overpass', sans-serif; 
+        font-weight: 600;
     }
 
     .hamburguer-trace {
         display: block;
+        margin: auto;
         width: 80%;
         border-bottom: 1px solid var(--grayish-blue);
         margin-top: 30px;
@@ -515,8 +627,7 @@ Responsive
 @media (max-width: 950px) {
 
     header {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 0;
     }
 
     .header_menu {
@@ -698,6 +809,12 @@ Responsive
 
     .connect_description {
         padding: 50px;
+    }
+}
+
+@media (max-width: 410px) {
+    .header-nav {
+        right: 6%;
     }
 }
 
