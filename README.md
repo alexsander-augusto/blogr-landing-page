@@ -31,8 +31,8 @@ Os usuários devem ser capazes de:
 
 ### Links
 
-- Solution URL: [Solution URL](#)
-- Live Site URL: [Live site URL](https://shootowned.github.io/blogr-landing-page/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/blogrlandingpage-lX5GshvBu)
+- Live Site URL: [Blogr Landing Page](https://shootowned.github.io/blogr-landing-page/)
 
 ## My process
 
